@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Weather container with smooth transition for background changes */
+.weather-container {
+  background-color: #87ceeb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 1s ease-in-out;
+}
+
+/* Weather conditions - background gradients */
+.clear {
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Red-orange gradient */
+}
+
+.cloudy {
+  background: linear-gradient(to bottom, #87ceeb, #b0c4de); /* Sky blue gradient */
+}
+
+.rainy {
+  background: linear-gradient(to bottom, #2c3e50, #34495e); /* Navy blue gradient */
+}
+
+.thunderstorm {
+  background: linear-gradient(to bottom, #1f1c2c, #928dab); /* Dark stormy gradient */
+}
+
+.snowy {
+  background: linear-gradient(to bottom, #d3d3d3, #ffffff); /* Light snowy gradient */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weather-info {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.emoji {
+  font-size: 4rem;
+  margin: 10px 0;
+}
+
+.error {
+  color: red;
+  font-size: 1.2rem;
+}
